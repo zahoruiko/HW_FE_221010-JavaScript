@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulations with DOM</title>
+</head>
+<body>
+    <script>
+        let wrapper = document.createElement('div');
+        // Устанавливается уникальный идентификатор для контейнера
+        wrapper.id = "wrapper";
+        // Ширина контейнера
+        wrapper.style.width = "250px";
+        // Добавляем блок в контейнер body
+        document.body.appendChild(wrapper);
+
+        // Подключаемся к созданному элементу, чтобы добавить в него вложенные блоки
+        wrapper = document.getElementById('wrapper');
+
+        // Создаем блок-1
+        var block1 = document.createElement('div');
+        // Идентификатор блока
+        block1.id = 'block1';
+        // Цвет шрифта
+        block1.style.color = "#008";
+        // Размер шрифта
+        block1.style.fontSize = "25px";
+        // Цвет фона блока
+        block1.style.background = "blue";
+        // Вставляем необходимый текст в этот блок
+        block1.innerHTML = "Text-1";
+        
+        // Вставляем блок в контейнер 
+        wrapper.appendChild(block1);
+
+        // Создаем блок-2
+        var block2 = document.createElement('div');
+        // Идентификатор блока
+        block2.id = 'block2';
+        // Цвет шрифта
+        block2.style.color = "#008";
+        // Размер шрифта
+        block2.style.fontSize = "25px";
+        // Цвет фона блока
+        block2.style.background = "red";
+        // Вставляем необходимый текст в этот блок
+        // block2.innerHTML = "Text-2";
+        
+        // Вставляем блок в контейнер 
+        wrapper.appendChild(block2);
+
+        // Изменяем параметры блока-1
+        block1 = document.getElementById('block1');
+        // Заменяем текст на неразрывный пробел
+        block1.innerHTML = "&nbsp;";
+        // Устанавливаем длину блока
+        block1.style.width = "250px";
+        // Устанавливаем высоту блока
+        block1.style.height = "70px";
+
+        // Изменяем параметры блока-2
+        block2 = document.getElementById('block2');
+        // Вставляем текст в блок с помощью функции append()
+        block2.append("Text-2");
+        // Заменяем текст на неразрывный пробел
+        block2.innerHTML = "&nbsp;";
+        // Устанавливаем другой цвет
+        block2.style.background = "yellow";
+        // Устанавливаем длину блока
+        block2.style.width = "250px";
+        // Устанавливаем высоту блока
+        block2.style.height = "70px";
+    </script>
+</body>
+</html>
