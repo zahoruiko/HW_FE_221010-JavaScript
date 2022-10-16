@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersises with Emmet</title>
+</head>
+<body>
+    <!-- div#menu-wrapper>ul.menu>li#item$*5 -->
+    <div id="menu-wrapper">
+        <ul class="menu">
+            <li id="item1"></li>
+            <li id="item2"></li>
+            <li id="item3"></li>
+            <li id="item4"></li>
+            <li id="item5"></li>
+        </ul>
+    </div>
+
+    <!-- div#content-wrapper>p.content#paragraph$*5>lorem3 -->
+    <div id="content-wrapper">
+        <p class="content" id="paragraph1">Lorem ipsum dolor sit amet.</p>
+        <p class="content" id="paragraph2">Suscipit rerum aperiam velit repudiandae.</p>
+        <p class="content" id="paragraph3">Nisi iusto magni reiciendis eos?</p>
+        <p class="content" id="paragraph4">Exercitationem eius fugit inventore perferendis.</p>
+        <p class="content" id="paragraph5">Soluta recusandae molestiae ea! Officia.</p>
+    </div>    
+
+    <!-- menu>li.item$$$*4>lorem1 -->
+    <menu>
+        <li class="item001">Lorem.</li>
+        <li class="item002">Tenetur.</li>
+        <li class="item003">Assumenda.</li>
+        <li class="item004">Esse.</li>
+    </menu>
+
+    <!-- ul>.class$$*3>lorem1 -->
+    <ul>
+        <li class="class01">Lorem.</li>
+        <li class="class02">Dignissimos.</li>
+        <li class="class03">Necessitatibus.</li>
+    </ul>
+
+    <!-- table>.row>.col -->
+    <table>
+        <tr class="row">
+            <td class="col"></td>
+        </tr>
+    </table>
+
+    <!-- .class -->
+    <div class="class"></div>
+
+    <!-- em>.class -->
+    <em><span class="class"></span></em>
+
+    <!-- .wrapper>h1{Title}+p*3>lorem5 -->
+    <div class="wrapper">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Necessitatibus molestias odio exercitationem architecto!</p>
+        <p>Laudantium enim blanditiis architecto ipsum!</p>
+    </div>
+
+    <!-- div+div>p>span+em^bq -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+    </div>
+
+    <!-- div+div>p>span+em^^bq -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+    </div>
+    <blockquote></blockquote>
+
+    <!-- div>(header>ul>li*3>a{Click me})+footer>p*3>lorem5 -->
+    <div>
+        <header>
+            <ul>
+                <li><a href="">Click me</a></li>
+                <li><a href="">Click me</a></li>
+                <li><a href="">Click me</a></li>
+            </ul>
+        </header>
+        <footer>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Obcaecati et beatae temporibus veniam.</p>
+            <p>Tempore tenetur sed ex tempora!</p>
+        </footer>
+    </div>
+
+    <!-- a{Click me} -->
+    <a href="">Click me</a>
+
+    <!-- img[alt="Img content"] -->
+    <img src="" alt="Img content">
+
+</body>
+</html>
