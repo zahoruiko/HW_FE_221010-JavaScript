@@ -8,70 +8,70 @@
 </head>
 <body>
     <script>
-        // Создаем блок контейнера
+        // Creating a container block
         let wrapper = document.createElement('div');
-        // Устанавливается уникальный идентификатор для контейнера
+        // A unique identifier is set for the container
         wrapper.id = "wrapper";
-        // Ширина контейнера
+        // Container width
         wrapper.style.width = "250px";
-        // Добавляем блок в контейнер body
+        // Adding a block to the body container
         document.body.appendChild(wrapper);
 
-        // Подключаемся к созданному элементу, чтобы добавить в него вложенные блоки
+        // Connecting to the created element to add nested blocks to it
         wrapper = document.getElementById('wrapper');
 
-        // Создаем блок-1
+        // Creating a block-1
         let block1 = document.createElement('div');
-        // Идентификатор блока
+        // Block Id
         block1.id = 'block1';
-        // Цвет шрифта
+        // Font color
         block1.style.color = "#008";
-        // Размер шрифта
+        // Font size
         block1.style.fontSize = "25px";
-        // Цвет фона блока
+        // Block background color
         block1.style.background = "blue";
-        // Вставляем необходимый текст в этот блок
+        // We insert the necessary text into this block
         block1.innerHTML = "Text-1";
         
-        // Вставляем блок в контейнер 
+        // Inserting the block into the container 
         wrapper.appendChild(block1);
 
-        // Создаем блок-2
+        // Creating a block-2
         let block2 = document.createElement('div');
-        // Идентификатор блока
+        // Block ID
         block2.id = 'block2';
-        // Цвет шрифта
+        // Font color
         block2.style.color = "#008";
-        // Размер шрифта
+        // font size
         block2.style.fontSize = "25px";
-        // Цвет фона блока
+        // Block background color
         block2.style.background = "red";
-        // Вставляем необходимый текст в этот блок
+        // We insert the necessary text into this block
         // block2.innerHTML = "Text-2";
         
-        // Вставляем блок в контейнер 
+        // Inserting the block into the container 
         wrapper.appendChild(block2);
 
-        // Изменяем параметры блока-1
+        // Changing the parameters of the block-1
         block1 = document.getElementById('block1');
-        // Заменяем текст на неразрывный пробел
+        // Replace the text with an unbroken space
         block1.innerHTML = "&nbsp;";
-        // Устанавливаем длину блока
+        // Setting the block length
         block1.style.width = "250px";
-        // Устанавливаем высоту блока
+        // Setting the height of the block
         block1.style.height = "70px";
 
-        // Изменяем параметры блока-2
+        // Changing the parameters of the block-2
         block2 = document.getElementById('block2');
-        // Вставляем текст в блок с помощью функции append()
+        // Inserting the text into the block using the append() function
         block2.append("Text-2");
-        // Заменяем текст на неразрывный пробел
+        // Replace the text with an unbroken space
         block2.innerHTML = "&nbsp;";
-        // Устанавливаем другой цвет
+        // Setting a different color
         block2.style.background = "yellow";
-        // Устанавливаем длину блока
+        // Setting the block length
         block2.style.width = "250px";
-        // Устанавливаем высоту блока
+        // Setting the height of the block
         block2.style.height = "70px";
     </script>
 </body>
